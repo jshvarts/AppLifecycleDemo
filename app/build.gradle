@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+project.ext {
+    supportLibraryVersion = "26.1.0"
+    daggerVersion = "2.12"
+    archLifecycleVersion = "1.0.0-beta2"
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.example.applifecycle"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    kapt {
+        generateStubs = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$project.supportLibraryVersion"
+
+    // Dagger Core
+    provided "com.google.dagger:dagger:$project.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$project.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$project.daggerVersion"
+
+    // Dagger Android
+    compile "com.google.dagger:dagger-android:$project.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$project.daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$project.daggerVersion"
+
+    // Lifecycle
+    implementation "android.arch.lifecycle:runtime:$project.archLifecycleVersion"
+    implementation "android.arch.lifecycle:extensions:$project.archLifecycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$project.archLifecycleVersion"
+}

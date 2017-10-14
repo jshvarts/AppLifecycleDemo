@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App Lifecycle Demo</string>
+    <string name="main_activity_title">ProcessLifecycleOwner</string>
+    <string name="main_activity_description">Class that provides lifecycle for the whole application process.</string>
+    <string name="foreground_message">Welcome to the app!</string>
+    <string name="background_message">Goodbye!</string>
+</resources>

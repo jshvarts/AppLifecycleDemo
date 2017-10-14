@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.applifecycle.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_activity_title_text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/main_activity_title_margin_top"
+        android:layout_marginBottom="@dimen/main_activity_title_margin_bottom"
+        android:text="@string/main_activity_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/main_activity_description_text_size"
+        android:layout_marginLeft="@dimen/main_activity_description_margin_left_right"
+        android:layout_marginRight="@dimen/main_activity_description_margin_left_right"
+        android:text="@string/main_activity_description" />
+
+</LinearLayout>
