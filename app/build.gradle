@@ -40,16 +40,13 @@ dependencies {
 
     // Dagger Core
     provided "com.google.dagger:dagger:$project.daggerVersion"
-    annotationProcessor "com.google.dagger:dagger-compiler:$project.daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$project.daggerVersion"
 
     // Dagger Android
     compile "com.google.dagger:dagger-android:$project.daggerVersion"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$project.daggerVersion"
     kapt "com.google.dagger:dagger-android-processor:$project.daggerVersion"
 
     // Lifecycle
-    implementation "android.arch.lifecycle:runtime:$project.archLifecycleVersion"
     implementation "android.arch.lifecycle:extensions:$project.archLifecycleVersion"
-    annotationProcessor "android.arch.lifecycle:compiler:$project.archLifecycleVersion"
+    kapt "android.arch.lifecycle:compiler:$project.archLifecycleVersion"
 }
