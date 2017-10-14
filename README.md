@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jshvarts/AppLifecycleDemo.svg?branch=master)](https://travis-ci.org/jshvarts/AppLifecycleDemo)
 
-Medium post is here: http://medium.com/@jshvarts/react-to-app-foreground-and-background-events-with-processlifecycleowner-96278e5816fa
+Medium post is here: http://proandroiddev.com/@jshvarts/react-to-app-foreground-and-background-events-with-processlifecycleowner-96278e5816fa
 
 ## Implementation Detail
 
