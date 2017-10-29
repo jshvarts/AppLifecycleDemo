@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 project.ext {
     supportLibraryVersion = "26.1.0"
     daggerVersion = "2.12"
@@ -26,9 +28,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    kapt {
-        generateStubs = true
     }
 }
 
