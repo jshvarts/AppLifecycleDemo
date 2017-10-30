@@ -1,9 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'kotlin-kapt'
 
 project.ext {
@@ -14,7 +12,6 @@ project.ext {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.example.applifecycle"
         minSdkVersion 19
@@ -38,11 +35,11 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$project.supportLibraryVersion"
 
     // Dagger Core
-    provided "com.google.dagger:dagger:$project.daggerVersion"
+    compileOnly "com.google.dagger:dagger:$project.daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$project.daggerVersion"
 
     // Dagger Android
-    compile "com.google.dagger:dagger-android:$project.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$project.daggerVersion"
     kapt "com.google.dagger:dagger-android-processor:$project.daggerVersion"
 
     // Lifecycle
