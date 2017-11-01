@@ -6,7 +6,7 @@ Medium post is here: http://proandroiddev.com/react-to-app-foreground-and-backgr
 
 ## Summary
 
-This project demonstrates using the new [ProcessLifecycleOwner](https://developer.android.com/reference/android/arch/lifecycle/ProcessLifecycleOwner.html) (bundled with [Lifecycle Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)) to react to foreground and background events. 
+This project demonstrates using the new [ProcessLifecycleOwner](https://developer.android.com/reference/android/arch/lifecycle/ProcessLifecycleOwner.html) (bundled with [Lifecycle Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)) to react to foreground and background events.
 
 `ProcessLifecycleOwner` provides lifecycle for the whole application process. For more details, see my post on Medium.
 
@@ -36,4 +36,3 @@ App is backgrounded. `ProcessLifecycleOwner` notifies the `LifecycleObserver` of
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
